@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Pitch Perfect Football Agency</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
+</head>
+<body>
+
+  <header class="navbar">
+            <div class="nav-left">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </header>
+  
+
+  <section class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>Let’s build your football future together</p>
+  </section>
+
+  <section class="contact-section">
+  <div class="contact-container">
+    <!-- Left Column -->
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <p><strong>Email:</strong> info@pitchperfect.com</p>
+      <p><strong>Phone:</strong> +234 901 234 5678</p>
+      <p><strong>Location:</strong> Ibadan, Nigeria</p>
+      <p><strong>Socials:</strong> @PitchPerfect on Instagram, Facebook, Twitter</p>
+    </div>
+
+    <!-- Right Column -->
+    <div class="contact-form">
+      <h2>Player Application Form</h2>
+      <form id="applyForm" onsubmit="return showThankYou();">
+        <input type="text" placeholder="Full Name" required><br>
+        <input type="number" placeholder="Age" required><br>
+        <input type="text" placeholder="Preferred Position" required><br>
+        <input type="text" placeholder="Current Club / School" required><br>
+        <input type="email" placeholder="Email Address" required><br>
+        <textarea placeholder="Tell us about your football background..." rows="4" required></textarea><br>
+        <button type="submit">Submit Application</button>
+      </form>
+      <div id="thankYouMessage" style="display: none; margin-top: 20px; font-weight: bold; color: green;">
+        Thank you for applying! We will contact you soon.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="map-container">
+ <iframe 
+  src="https://maps.google.com/maps?q=Lead%20City%20University%2C%20Ibadan&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+  width="100%" 
+  height="350" 
+  frameborder="0" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+
+</div>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Pitch Perfect Football Agency | Group 29</p>
+  </footer>
+
+  <script>
+  function showThankYou() {
+    document.getElementById("applyForm").style.display = "none";
+    document.getElementById("thankYouMessage").style.display = "block";
+    return false;
+  }
+</script>
+
+
+</body>
+</html>
